@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Sistema_GimnasioModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Alumno">
+    <Key>
+      <PropertyRef Name="Matricula" />
+    </Key>
+    <Property Name="Matricula" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idGrupo" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Edad" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="Grupo" Relationship="Self.FK__Alumno__idGrupo__35BCFE0A" FromRole="Alumno" ToRole="Grupo" />
+    <NavigationProperty Name="Alumnos_GrupoGimnasio" Relationship="Self.FK__Alumnos_G__Matri__33D4B598" FromRole="Alumno" ToRole="Alumnos_GrupoGimnasio" />
+  </EntityType>
+  <EntityType Name="Alumnos_GrupoGimnasio">
+    <Key>
+      <PropertyRef Name="Matricula" />
+      <PropertyRef Name="idGimnasio" />
+    </Key>
+    <Property Name="Matricula" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idGimnasio" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Alumno" Relationship="Self.FK__Alumnos_G__Matri__33D4B598" FromRole="Alumnos_GrupoGimnasio" ToRole="Alumno" />
+    <NavigationProperty Name="GrupoGimnasio" Relationship="Self.FK__Alumnos_G__idGim__36B12243" FromRole="Alumnos_GrupoGimnasio" ToRole="GrupoGimnasio" />
+    <NavigationProperty Name="Asistencias" Relationship="Self.FK__Asistencia__3A81B327" FromRole="Alumnos_GrupoGimnasio" ToRole="Asistencia" />
+  </EntityType>
+  <EntityType Name="Grupo">
+    <Key>
+      <PropertyRef Name="idGrupo" />
+    </Key>
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdLicenciatura" Type="Int32" Nullable="false" />
+    <Property Name="idGrupo" Type="Int32" Nullable="false" />
+    <Property Name="semestre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Alumnoes" Relationship="Self.FK__Alumno__idGrupo__35BCFE0A" FromRole="Grupo" ToRole="Alumno" />
+    <NavigationProperty Name="Licenciatura" Relationship="Self.FK__Grupo__IdLicenci__1ED998B2" FromRole="Grupo" ToRole="Licenciatura" />
+    <NavigationProperty Name="Licenciatura1" Relationship="Self.FK__Grupo__IdLicenci__34C8D9D1" FromRole="Grupo" ToRole="Licenciatura" />
+  </EntityType>
+  <EntityType Name="GrupoGimnasio">
+    <Key>
+      <PropertyRef Name="idGimnasio" />
+    </Key>
+    <Property Name="idGimnasio" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IdHorario" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Alumnos_GrupoGimnasio" Relationship="Self.FK__Alumnos_G__idGim__36B12243" FromRole="GrupoGimnasio" ToRole="Alumnos_GrupoGimnasio" />
+    <NavigationProperty Name="HorarioGimnasio" Relationship="Self.FK__GrupoGimn__IdHor__38996AB5" FromRole="GrupoGimnasio" ToRole="HorarioGimnasio" />
+  </EntityType>
+  <EntityType Name="HorarioGimnasio">
+    <Key>
+      <PropertyRef Name="IdHorario" />
+    </Key>
+    <Property Name="IdHorario" Type="Int32" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GrupoGimnasios" Relationship="Self.FK__GrupoGimn__IdHor__38996AB5" FromRole="HorarioGimnasio" ToRole="GrupoGimnasio" />
+    <NavigationProperty Name="HorarioGimnasio_Horas" Relationship="Self.FK__HorarioGi__IdHor__37A5467C" FromRole="HorarioGimnasio" ToRole="HorarioGimnasio_Horas" />
+  </EntityType>
+  <EntityType Name="Hora">
+    <Key>
+      <PropertyRef Name="IdHora" />
+    </Key>
+    <Property Name="IdHora" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="HoraInicio" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="HoraFin" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="HorarioGimnasio_Horas" Relationship="Self.FK__HorarioGi__IdHor__398D8EEE" FromRole="Horas" ToRole="HorarioGimnasio_Horas" />
+  </EntityType>
+  <EntityType Name="Licenciatura">
+    <Key>
+      <PropertyRef Name="IdLicenciatura" />
+    </Key>
+    <Property Name="IdLicenciatura" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Grupoes" Relationship="Self.FK__Grupo__IdLicenci__1ED998B2" FromRole="Licenciatura" ToRole="Grupo" />
+    <NavigationProperty Name="Grupoes1" Relationship="Self.FK__Grupo__IdLicenci__34C8D9D1" FromRole="Licenciatura" ToRole="Grupo" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="nombreUsuario" />
+    </Key>
+    <Property Name="nombreUsuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Contraseña" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Asistencia">
+    <Key>
+      <PropertyRef Name="Fecha" />
+      <PropertyRef Name="Estado" />
+      <PropertyRef Name="Matricula" />
+      <PropertyRef Name="idGimnasio" />
+    </Key>
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Estado" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Matricula" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idGimnasio" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Alumnos_GrupoGimnasio" Relationship="Self.FK__Asistencia__3A81B327" FromRole="Asistencia" ToRole="Alumnos_GrupoGimnasio" />
+  </EntityType>
+  <EntityType Name="HorarioGimnasio_Horas">
+    <Key>
+      <PropertyRef Name="IdHora" />
+      <PropertyRef Name="IdHorario" />
+      <PropertyRef Name="Dia" />
+    </Key>
+    <Property Name="IdHora" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="IdHorario" Type="Int32" Nullable="false" />
+    <Property Name="Dia" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="HorarioGimnasio" Relationship="Self.FK__HorarioGi__IdHor__37A5467C" FromRole="HorarioGimnasio_Horas" ToRole="HorarioGimnasio" />
+    <NavigationProperty Name="Hora" Relationship="Self.FK__HorarioGi__IdHor__398D8EEE" FromRole="HorarioGimnasio_Horas" ToRole="Horas" />
+  </EntityType>
+  <Association Name="FK__Alumno__idGrupo__35BCFE0A">
+    <End Role="Grupo" Type="Self.Grupo" Multiplicity="1" />
+    <End Role="Alumno" Type="Self.Alumno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grupo">
+        <PropertyRef Name="idGrupo" />
+      </Principal>
+      <Dependent Role="Alumno">
+        <PropertyRef Name="idGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Alumnos_G__Matri__33D4B598">
+    <End Role="Alumno" Type="Self.Alumno" Multiplicity="1" />
+    <End Role="Alumnos_GrupoGimnasio" Type="Self.Alumnos_GrupoGimnasio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alumno">
+        <PropertyRef Name="Matricula" />
+      </Principal>
+      <Dependent Role="Alumnos_GrupoGimnasio">
+        <PropertyRef Name="Matricula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Alumnos_G__idGim__36B12243">
+    <End Role="GrupoGimnasio" Type="Self.GrupoGimnasio" Multiplicity="1" />
+    <End Role="Alumnos_GrupoGimnasio" Type="Self.Alumnos_GrupoGimnasio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GrupoGimnasio">
+        <PropertyRef Name="idGimnasio" />
+      </Principal>
+      <Dependent Role="Alumnos_GrupoGimnasio">
+        <PropertyRef Name="idGimnasio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Asistencia__3A81B327">
+    <End Role="Alumnos_GrupoGimnasio" Type="Self.Alumnos_GrupoGimnasio" Multiplicity="1" />
+    <End Role="Asistencia" Type="Self.Asistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alumnos_GrupoGimnasio">
+        <PropertyRef Name="Matricula" />
+        <PropertyRef Name="idGimnasio" />
+      </Principal>
+      <Dependent Role="Asistencia">
+        <PropertyRef Name="Matricula" />
+        <PropertyRef Name="idGimnasio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Grupo__IdLicenci__1ED998B2">
+    <End Role="Licenciatura" Type="Self.Licenciatura" Multiplicity="1" />
+    <End Role="Grupo" Type="Self.Grupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Licenciatura">
+        <PropertyRef Name="IdLicenciatura" />
+      </Principal>
+      <Dependent Role="Grupo">
+        <PropertyRef Name="IdLicenciatura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Grupo__IdLicenci__34C8D9D1">
+    <End Role="Licenciatura" Type="Self.Licenciatura" Multiplicity="1" />
+    <End Role="Grupo" Type="Self.Grupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Licenciatura">
+        <PropertyRef Name="IdLicenciatura" />
+      </Principal>
+      <Dependent Role="Grupo">
+        <PropertyRef Name="IdLicenciatura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GrupoGimn__IdHor__38996AB5">
+    <End Role="HorarioGimnasio" Type="Self.HorarioGimnasio" Multiplicity="1" />
+    <End Role="GrupoGimnasio" Type="Self.GrupoGimnasio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HorarioGimnasio">
+        <PropertyRef Name="IdHorario" />
+      </Principal>
+      <Dependent Role="GrupoGimnasio">
+        <PropertyRef Name="IdHorario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HorarioGi__IdHor__37A5467C">
+    <End Role="HorarioGimnasio" Type="Self.HorarioGimnasio" Multiplicity="1" />
+    <End Role="HorarioGimnasio_Horas" Type="Self.HorarioGimnasio_Horas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HorarioGimnasio">
+        <PropertyRef Name="IdHorario" />
+      </Principal>
+      <Dependent Role="HorarioGimnasio_Horas">
+        <PropertyRef Name="IdHorario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HorarioGi__IdHor__398D8EEE">
+    <End Role="Horas" Type="Self.Hora" Multiplicity="1" />
+    <End Role="HorarioGimnasio_Horas" Type="Self.HorarioGimnasio_Horas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Horas">
+        <PropertyRef Name="IdHora" />
+      </Principal>
+      <Dependent Role="HorarioGimnasio_Horas">
+        <PropertyRef Name="IdHora" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Sistema_GimnasioEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Alumnoes" EntityType="Self.Alumno" />
+    <EntitySet Name="Alumnos_GrupoGimnasio" EntityType="Self.Alumnos_GrupoGimnasio" />
+    <EntitySet Name="Grupoes" EntityType="Self.Grupo" />
+    <EntitySet Name="GrupoGimnasios" EntityType="Self.GrupoGimnasio" />
+    <EntitySet Name="HorarioGimnasios" EntityType="Self.HorarioGimnasio" />
+    <EntitySet Name="Horas" EntityType="Self.Hora" />
+    <EntitySet Name="Licenciaturas" EntityType="Self.Licenciatura" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuario" />
+    <EntitySet Name="Asistencias" EntityType="Self.Asistencia" />
+    <EntitySet Name="HorarioGimnasio_Horas" EntityType="Self.HorarioGimnasio_Horas" />
+    <AssociationSet Name="FK__Alumno__idGrupo__35BCFE0A" Association="Self.FK__Alumno__idGrupo__35BCFE0A">
+      <End Role="Grupo" EntitySet="Grupoes" />
+      <End Role="Alumno" EntitySet="Alumnoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Alumnos_G__Matri__33D4B598" Association="Self.FK__Alumnos_G__Matri__33D4B598">
+      <End Role="Alumno" EntitySet="Alumnoes" />
+      <End Role="Alumnos_GrupoGimnasio" EntitySet="Alumnos_GrupoGimnasio" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Alumnos_G__idGim__36B12243" Association="Self.FK__Alumnos_G__idGim__36B12243">
+      <End Role="GrupoGimnasio" EntitySet="GrupoGimnasios" />
+      <End Role="Alumnos_GrupoGimnasio" EntitySet="Alumnos_GrupoGimnasio" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Asistencia__3A81B327" Association="Self.FK__Asistencia__3A81B327">
+      <End Role="Alumnos_GrupoGimnasio" EntitySet="Alumnos_GrupoGimnasio" />
+      <End Role="Asistencia" EntitySet="Asistencias" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Grupo__IdLicenci__1ED998B2" Association="Self.FK__Grupo__IdLicenci__1ED998B2">
+      <End Role="Licenciatura" EntitySet="Licenciaturas" />
+      <End Role="Grupo" EntitySet="Grupoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Grupo__IdLicenci__34C8D9D1" Association="Self.FK__Grupo__IdLicenci__34C8D9D1">
+      <End Role="Licenciatura" EntitySet="Licenciaturas" />
+      <End Role="Grupo" EntitySet="Grupoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GrupoGimn__IdHor__38996AB5" Association="Self.FK__GrupoGimn__IdHor__38996AB5">
+      <End Role="HorarioGimnasio" EntitySet="HorarioGimnasios" />
+      <End Role="GrupoGimnasio" EntitySet="GrupoGimnasios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HorarioGi__IdHor__37A5467C" Association="Self.FK__HorarioGi__IdHor__37A5467C">
+      <End Role="HorarioGimnasio" EntitySet="HorarioGimnasios" />
+      <End Role="HorarioGimnasio_Horas" EntitySet="HorarioGimnasio_Horas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HorarioGi__IdHor__398D8EEE" Association="Self.FK__HorarioGi__IdHor__398D8EEE">
+      <End Role="Horas" EntitySet="Horas" />
+      <End Role="HorarioGimnasio_Horas" EntitySet="HorarioGimnasio_Horas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

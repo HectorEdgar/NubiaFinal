@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Sistema_GimnasioModelStoreContainer" CdmEntityContainer="Sistema_GimnasioEntities">
+    <EntitySetMapping Name="Alumnoes">
+      <EntityTypeMapping TypeName="Sistema_GimnasioModel.Alumno">
+        <MappingFragment StoreEntitySet="Alumno">
+          <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+          <ScalarProperty Name="idGrupo" ColumnName="idGrupo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Edad" ColumnName="Edad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Alumnos_GrupoGimnasio">
+      <EntityTypeMapping TypeName="Sistema_GimnasioModel.Alumnos_GrupoGimnasio">
+        <MappingFragment StoreEntitySet="Alumnos_GrupoGimnasio">
+          <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+          <ScalarProperty Name="idGimnasio" ColumnName="idGimnasio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Grupoes">
+      <EntityTypeMapping TypeName="Sistema_GimnasioModel.Grupo">
+        <MappingFragment StoreEntitySet="Grupo">
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdLicenciatura" ColumnName="IdLicenciatura" />
+          <ScalarProperty Name="idGrupo" ColumnName="idGrupo" />
+          <ScalarProperty Name="semestre" ColumnName="semestre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GrupoGimnasios">
+      <EntityTypeMapping TypeName="Sistema_GimnasioModel.GrupoGimnasio">
+        <MappingFragment StoreEntitySet="GrupoGimnasio">
+          <ScalarProperty Name="idGimnasio" ColumnName="idGimnasio" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="IdHorario" ColumnName="IdHorario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HorarioGimnasios">
+      <EntityTypeMapping TypeName="Sistema_GimnasioModel.HorarioGimnasio">
+        <MappingFragment StoreEntitySet="HorarioGimnasio">
+          <ScalarProperty Name="IdHorario" ColumnName="IdHorario" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Horas">
+      <EntityTypeMapping TypeName="Sistema_GimnasioModel.Hora">
+        <MappingFragment StoreEntitySet="Horas">
+          <ScalarProperty Name="IdHora" ColumnName="IdHora" />
+          <ScalarProperty Name="HoraInicio" ColumnName="HoraInicio" />
+          <ScalarProperty Name="HoraFin" ColumnName="HoraFin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Licenciaturas">
+      <EntityTypeMapping TypeName="Sistema_GimnasioModel.Licenciatura">
+        <MappingFragment StoreEntitySet="Licenciatura">
+          <ScalarProperty Name="IdLicenciatura" ColumnName="IdLicenciatura" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="Sistema_GimnasioModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="nombreUsuario" ColumnName="nombreUsuario" />
+          <ScalarProperty Name="Contraseña" ColumnName="Contraseña" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Asistencias">
+      <EntityTypeMapping TypeName="Sistema_GimnasioModel.Asistencia">
+        <MappingFragment StoreEntitySet="Asistencia">
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+          <ScalarProperty Name="idGimnasio" ColumnName="idGimnasio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HorarioGimnasio_Horas">
+      <EntityTypeMapping TypeName="Sistema_GimnasioModel.HorarioGimnasio_Horas">
+        <MappingFragment StoreEntitySet="HorarioGimnasio_Horas">
+          <ScalarProperty Name="IdHora" ColumnName="IdHora" />
+          <ScalarProperty Name="IdHorario" ColumnName="IdHorario" />
+          <ScalarProperty Name="Dia" ColumnName="Dia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

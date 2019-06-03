@@ -1,0 +1,53 @@
+c:\users\héctoredgar\documents\visual studio 2015\Projects\ProyectoNubiaV0.1\ProyectoNubiaV0.1\bin\Debug\ProyectoNubiaV0.1.exe.config
+c:\users\héctoredgar\documents\visual studio 2015\Projects\ProyectoNubiaV0.1\ProyectoNubiaV0.1\bin\Debug\ProyectoNubiaV0.1.exe
+c:\users\héctoredgar\documents\visual studio 2015\Projects\ProyectoNubiaV0.1\ProyectoNubiaV0.1\bin\Debug\ProyectoNubiaV0.1.pdb
+c:\users\héctoredgar\documents\visual studio 2015\Projects\ProyectoNubiaV0.1\ProyectoNubiaV0.1\bin\Debug\EntityFramework.dll
+c:\users\héctoredgar\documents\visual studio 2015\Projects\ProyectoNubiaV0.1\ProyectoNubiaV0.1\bin\Debug\EntityFramework.xml
+c:\users\héctoredgar\documents\visual studio 2015\Projects\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0.1.csprojResolveAssemblyReference.cache
+c:\users\héctoredgar\documents\visual studio 2015\Projects\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.Loggin.resources
+c:\users\héctoredgar\documents\visual studio 2015\Projects\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.Properties.Resources.resources
+c:\users\héctoredgar\documents\visual studio 2015\Projects\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0.1.csproj.GenerateResource.Cache
+c:\users\héctoredgar\documents\visual studio 2015\Projects\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0.1.exe
+c:\users\héctoredgar\documents\visual studio 2015\Projects\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0.1.pdb
+C:\Users\HéctorEdgar\documents\visual studio 2015\Projects\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.ABCgenerico.resources
+C:\Users\HéctorEdgar\documents\visual studio 2015\Projects\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.MenuPrincipal.resources
+C:\Users\HéctorEdgar\documents\visual studio 2015\Projects\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.AbcALGRLI.resources
+C:\Users\HéctorEdgar\documents\visual studio 2015\Projects\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.AbcHorarioHorasGimnasio.resources
+C:\Users\HéctorEdgar\documents\visual studio 2015\Projects\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.Formularios.MenuPrincipalAbc.resources
+C:\Users\HéctorEdgar\documents\visual studio 2015\Projects\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.Formularios.TomaAsistencia.resources
+C:\Users\nezzha\Desktop\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\bin\Debug\ProyectoNubiaV0.1.exe.config
+C:\Users\nezzha\Desktop\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0.1.exe
+C:\Users\nezzha\Desktop\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0.1.pdb
+C:\Users\nezzha\Desktop\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\bin\Debug\ProyectoNubiaV0.1.exe
+C:\Users\nezzha\Desktop\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\bin\Debug\ProyectoNubiaV0.1.pdb
+C:\Users\nezzha\Desktop\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\bin\Debug\EntityFramework.dll
+C:\Users\nezzha\Desktop\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\bin\Debug\EntityFramework.xml
+C:\Users\nezzha\Desktop\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0.1.csprojResolveAssemblyReference.cache
+C:\Users\nezzha\Desktop\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.ABCgenerico.resources
+C:\Users\nezzha\Desktop\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.AbcHorarioHorasGimnasio.resources
+C:\Users\nezzha\Desktop\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.Loggin.resources
+C:\Users\nezzha\Desktop\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.MenuPrincipal.resources
+C:\Users\nezzha\Desktop\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.Formularios.MenuPrincipalAbc.resources
+C:\Users\nezzha\Desktop\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.Formularios.TomaAsistencia.resources
+C:\Users\nezzha\Desktop\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.Properties.Resources.resources
+C:\Users\nezzha\Desktop\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0.1.csproj.GenerateResource.Cache
+C:\Users\nezzha\Desktop\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.Formularios.AbcALGRLI.resources
+C:\Users\nezzha\Desktop\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.Formularios.AbcGrupoGim.resources
+H:\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\bin\Debug\ProyectoNubiaV0.1.exe.config
+H:\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0.1.exe
+H:\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0.1.pdb
+H:\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\bin\Debug\ProyectoNubiaV0.1.exe
+H:\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\bin\Debug\ProyectoNubiaV0.1.pdb
+H:\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\bin\Debug\EntityFramework.dll
+H:\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\bin\Debug\EntityFramework.xml
+H:\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0.1.csprojResolveAssemblyReference.cache
+H:\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.Formularios.AbcALGRLI.resources
+H:\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.ABCgenerico.resources
+H:\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.Formularios.AbcGrupoGim.resources
+H:\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.AbcHorarioHorasGimnasio.resources
+H:\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.Loggin.resources
+H:\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.MenuPrincipal.resources
+H:\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.Formularios.MenuPrincipalAbc.resources
+H:\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.Formularios.TomaAsistencia.resources
+H:\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0._1.Properties.Resources.resources
+H:\NubiaFinal\ProyectoNubiaV0.1\ProyectoNubiaV0.1\obj\Debug\ProyectoNubiaV0.1.csproj.GenerateResource.Cache
